@@ -6,8 +6,8 @@
 
 Implemented the following innitial fetaures:
 
-- [ ] User sees app icon in home screen and styled launch screen.
-- [ ] User can log in. 
+- [x] User sees app icon in home screen and styled launch screen.
+- [x] User can log in. 
 - [ ] User can log out. 
 - [ ] User stays logged in across restarts.
 - [ ] User can view tweets with the user profile picture, username, and tweet text. 
