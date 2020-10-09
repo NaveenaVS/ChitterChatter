@@ -4,7 +4,7 @@
 
 ## User Stories
 
-Implemented the following innitial fetaures:
+Implemented the following initial features:
 
 - [x] User sees app icon in home screen and styled launch screen.
 - [x] User can log in. 
