@@ -8,7 +8,7 @@ Implemented the following initial features:
 
 - [x] User sees app icon in home screen and styled launch screen.
 - [x] User can log in. 
-- [ ] User can log out. 
+- [x] User can log out. 
 - [ ] User stays logged in across restarts.
 - [ ] User can view tweets with the user profile picture, username, and tweet text. 
 
