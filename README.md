@@ -10,7 +10,7 @@ Implemented the following initial features:
 - [x] User can log in. 
 - [x] User can log out. 
 - [x] User stays logged in across restarts.
-- [ ] User can view tweets with the user profile picture, username, and tweet text. 
+- [x] User can view tweets with the user profile picture, username, and tweet text. 
 
 The following **additional** features will be added soon :)
 
