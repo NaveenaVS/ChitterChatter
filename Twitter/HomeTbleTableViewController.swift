@@ -21,6 +21,9 @@ class HomeTbleTableViewController: UITableViewController {
         //call twittee api to logout
         TwitterAPICaller.client?.logout()
         self.dismiss(animated: true, completion: nil)
+        
+        //need to set the user loggedIn to false..so the app remembers u logged out!
+        UserDefaults.standard.set(false, forKey: "userLoggedIn")//use the exact same key -> this is the key that will be checked to see if the user logged in
     }
     
     // MARK: - Table view data source
