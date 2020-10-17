@@ -19,6 +19,12 @@ class HomeTbleTableViewController: UITableViewController {
 
         //need to call the loadTweet funct here: cus we want to call after the view loads!
         //loadTweet() @19:37
+        
+        //want the cell heights to be dynamic: want the height to be automatically tabulated:
+        self.tableView.rowHeight = UITableView.automaticDimension
+        //give the abve an estimated height
+        self.tableView.estimatedRowHeight = 150
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -47,8 +53,6 @@ class HomeTbleTableViewController: UITableViewController {
         }, failure: { (Error) in
             print("Could not retrieve tweets!")
         })
-        
-        
         
         
     }
@@ -86,6 +90,14 @@ class HomeTbleTableViewController: UITableViewController {
         if let imageData = data {
             cell.profileImageView.image = UIImage(data: imageData)
         }
+        //looking at a particular tweet in the tweet array by indexing it at indexpath.row
+        
+        //wanna find out which tweets were favorited so that we can decide what the state should be set to and chnage the color of the icon:
+        cell.setFavorite(tweetArray[indexPath.row]["favorited"] as! Bool)
+        
+        //setting the tweet id:
+        cell.tweetId = tweetArray[indexPath.row]["id"] as! Int
+        
         
         return cell
     }
