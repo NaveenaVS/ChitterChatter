@@ -13,8 +13,12 @@ class TweetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //want to display the cursor with keyboard when tweet is clicked so that the user is prompted to type something:
+        tweetTextView.becomeFirstResponder() //ensures that the app knows it can take text in so display the cursor. 
     }
+    
+    @IBOutlet weak var tweetTextView: UITextView! //text view as an outlet cus we wanna refer to it 
+    
     
     @IBAction func cancel(_ sender: Any) {
         //when user presses this button we want to cancel the tweet.
@@ -24,7 +28,18 @@ class TweetViewController: UIViewController {
     
     
     @IBAction func tweet(_ sender: Any) {
-        
+        //if the tweet is empty we dont to send it to our api caller
+        //need to put self because its in a closure
+        if(!tweetTextView.text.isEmpty) {
+            TwitterAPICaller.client?.postTweet(tweetString: tweetTextView.text, success: {
+                self.dismiss(animated: true, completion: nil)
+            }, failure: { (error) in
+                print("Error in posting the tweet \(error)")
+                self.dismiss(animated: true, completion: nil)
+            })
+        }else{
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     

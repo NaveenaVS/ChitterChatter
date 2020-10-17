@@ -18,10 +18,13 @@ class HomeTbleTableViewController: UITableViewController {
         super.viewDidLoad()
 
         //need to call the loadTweet funct here: cus we want to call after the view loads!
-        loadTweet()
+        //loadTweet() @19:37
     }
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.loadTweet() //same as loadTweetTable?
+    }
     //pulling tweets
     func loadTweet(){
         
