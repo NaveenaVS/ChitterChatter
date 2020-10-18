@@ -20,8 +20,11 @@ The following **additional** features will be added soon :)
 - [ ] User can load past tweets infinitely. 
 
 ## Video Walkthrough of my amazing app 
+# Here's a walkthrough of implemented phase 2 user stories:
 
-Here's a walkthrough of implemented user stories:
+<img src='https://media.giphy.com/media/0oPpAFnaA9bSZrtNZD/giphy.gif' width='' alt='Video Walkthrough' />
+
+# Here's a walkthrough of implemented phase 1 user stories:
 
 <img src='https://media.giphy.com/media/UmjNWkv5MLJQUXiVVj/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
