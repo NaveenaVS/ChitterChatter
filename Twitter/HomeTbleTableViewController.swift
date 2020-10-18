@@ -98,7 +98,12 @@ class HomeTbleTableViewController: UITableViewController {
         //setting the tweet id:
         cell.tweetId = tweetArray[indexPath.row]["id"] as! Int
         
+        //after creating the retweeted variable in the tweetcellview.. we come here to set it: doing retweeting as a function:
+        cell.setRetweeted(tweetArray[indexPath.row]["retweeted"] as! Bool) //pass whether the tweet was retweeted or not as a parameter-> go to tweetcell.. and remove the retweet property and make it a method over there
         
+      
+        
+    
         return cell
     }
     
