@@ -4,9 +4,9 @@
 
 ## User Stories-Phase 2:
 # Implemented the below user stories as a part 2 version of the Twitter clone app :)
-- [x] User can compose a tweet. (4pts)
-- [x] User can favorite a tweet. (4pts)
-- [x] User can retweet a tweet. (2pts)
+- [x] User can compose a tweet. 
+- [x] User can favorite a tweet. 
+- [x] User can retweet a tweet. 
 # Implemented the following initial/pahse 1 features:
 - [x] User sees app icon in home screen and styled launch screen.
 - [x] User can log in. 
